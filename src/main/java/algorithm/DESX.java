@@ -28,34 +28,33 @@ public class DESX {
         this.secondKey = DESX.firstKeyPermutation(Values.SECONDKEY);
         this.subkeys = DESX.createSubkeys(this.secondKey);
 /////////////////////////////////////////////////////////////////// SZYFROWANIE/ODSZYFROWANIE
-    /*    if (encryption) {
+        if (encryption) {
             this.plainText2D = xorBytesArray(this.plainText2D, Values.FIRSTKEY);
         } else {
             this.plainText2D = xorBytesArray(this.plainText2D, Values.THRIDKEY);
         }
-        */
 ///////////////////////////////////////////////////////////////////
 
-        this.plainText2D = permutation(this.plainText2D, Values.startPermutation);
+        this.plainText2D = this.permutation(this.plainText2D, Values.startPermutation);
 
-//        Methods.showArray(this.plainText2D, 8, this.size);
-//Blocks Dividing
         this.blocksDividing(plainText2D);
 
 //Feisl Functions
+        /*
         for (int i = 0; i < size; i++) {
             this.functionF(encryption);
         }
-
+        */
 
         this.plainText2D = this.permutation(this.plainText2D, Values.endPermutation);
-
-      /*  if (encryption) {
+/////////////////////////////////////////////////////////////////////////////// SZYFR/ODSZFR
+        if (encryption) {
             this.plainText2D = xorBytesArray(this.plainText2D, Values.THRIDKEY);
         } else {
             this.plainText2D = xorBytesArray(this.plainText2D, Values.FIRSTKEY);
         }
-*/
+//////////////////////////////////////////////////////////////////////////////
+
         System.out.println("AFTER ALGORITHM");
         Methods.showArray(this.plainText2D, 8, this.size);
         System.out.println("8888888888888888888888888888888888888888888");

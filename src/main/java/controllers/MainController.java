@@ -19,6 +19,7 @@ public class MainController {
     private File file;
     private String path;
     private int size;
+    private String extension;
 
     @FXML
     public void initialize() {
@@ -35,19 +36,19 @@ public class MainController {
         desx = new DESX();
         this.path = getItem();
         this.file = new File(path);
-        this.desx.start(this.saveAsBytesArray(),size,true);
+        this.desx.start(this.saveAsBytesArray(), size, true);
         try {
-            this.saveFile(desx);
+            this.saveFile(desx, "encrypted."+extension);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
     }
 
-    private void saveFile(DESX zmienna) throws IOException {
-        byte[]temp=zmienna.getBytes();
-      //  File fileOutput = new File("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia\\output.txt");
-        FileOutputStream stream = new FileOutputStream("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia\\output.txt");
+    private void saveFile(DESX zmienna, String nazwa) throws IOException {
+        byte[] temp = zmienna.getBytes();
+        //  File fileOutput = new File("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia\\output.txt");
+        FileOutputStream stream = new FileOutputStream("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia\\" + nazwa);
         try {
             stream.write(temp);
         } catch (IOException e) {
@@ -63,27 +64,31 @@ public class MainController {
         desx = new DESX();
         this.path = getItem();
         this.file = new File(path);
-        this.desx.start(this.saveAsBytesArray(),size,false);
+        this.desx.start(this.saveAsBytesArray(), size, false);
 
         try {
-            this.saveFile(desx);
+            this.saveFile(desx, "decrypted."+extension);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 
     public void openFileChooser() {
         FileChooser fc = new FileChooser();  //Inicjalizacja fc
         fc.setInitialDirectory(new File("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia"));
-        fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("TXT", "*.txt"), new FileChooser.ExtensionFilter("PNG ", "*.png"), new FileChooser.ExtensionFilter("BMP", "*.bmp"));
+        fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("txt", "*.txt"), new FileChooser.ExtensionFilter("jpg", "*.jpg"));
+
         File selectedFile = fc.showOpenDialog(null); //przypisz wybrany w fc plik do selectedFile
-        fileIsNull(selectedFile);
+        fileIsNull(selectedFile,fc);
     }
 
-    private void fileIsNull(File selectedFile) {
+    private void fileIsNull(File selectedFile,FileChooser fc) {
         if (selectedFile != null) {
             listview.getItems().add(selectedFile.getAbsolutePath()); //dodaje wybrany plik do listyitemów
+            this.extension = fc.getSelectedExtensionFilter().getDescription();
+
         } else {
             System.out.println("file is not valid");
         }
@@ -107,7 +112,7 @@ public class MainController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            this.size = (fileContent.length / 8) + 1;
+            this.size = (fileContent.length % 8 == 0) ? (fileContent.length / 8) : ((fileContent.length / 8) + 1);
 
             return fileContent;
         } else {
