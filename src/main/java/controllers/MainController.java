@@ -12,8 +12,6 @@ import java.nio.file.Files;
 public class MainController {
     @FXML
     private ListView listview;
-    @FXML
-    private Button button;
 
     private DESX desx;
     private File file;
@@ -47,8 +45,7 @@ public class MainController {
 
     private void saveFile(DESX zmienna, String nazwa) throws IOException {
         byte[] temp = zmienna.getBytes();
-        //  File fileOutput = new File("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia\\output.txt");
-        FileOutputStream stream = new FileOutputStream("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia\\" + nazwa);
+        FileOutputStream stream = new FileOutputStream(new File((System.getProperty("user.dir"))+"\\test\\"+nazwa));
         try {
             stream.write(temp);
         } catch (IOException e) {
@@ -77,7 +74,7 @@ public class MainController {
 
     public void openFileChooser() {
         FileChooser fc = new FileChooser();  //Inicjalizacja fc
-        fc.setInitialDirectory(new File("C:\\Users\\Mateusz\\Desktop\\Studia\\2.studia\\Kryptografia"));
+        fc.setInitialDirectory(new File((System.getProperty("user.dir"))+"\\test"));
         fc.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("txt", "*.txt"), new FileChooser.ExtensionFilter("jpg", "*.jpg"));
 
         File selectedFile = fc.showOpenDialog(null); //przypisz wybrany w fc plik do selectedFile

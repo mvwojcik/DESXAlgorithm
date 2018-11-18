@@ -1,7 +1,5 @@
 package algorithm;
 
-
-import javafx.scene.layout.Pane;
 import staticMethods.Methods;
 import staticMethods.Values;
 
@@ -40,11 +38,10 @@ public class DESX {
         this.blocksDividing(plainText2D);
 
 //Feisl Functions
-        /*
-        for (int i = 0; i < size; i++) {
+
+
             this.functionF(encryption);
-        }
-        */
+
 
         this.plainText2D = this.permutation(this.plainText2D, Values.endPermutation);
 /////////////////////////////////////////////////////////////////////////////// SZYFR/ODSZFR
@@ -117,9 +114,10 @@ public class DESX {
 
     private void functionF(boolean encrypt) {
         for (int i = 0; i < this.size; i++) {
-            for (int j = 0; j < this.subkeys.length; j++) {
-                byte[] oldRightSide = this.rightSide[i];
 
+            for (int j = 0; j < this.subkeys.length; j++) {
+
+                byte[] oldRightSide = this.rightSide[i];
 
 /**
  * Expansion
@@ -135,31 +133,31 @@ public class DESX {
  * Key mixing
  * xoring created 48bit key with right side after expansion to 48 bit
  */
-//////////////////////////////////////TU DAc madrego if-a do odszyfrowywania
                 long[] key = new long[1];
                 if (encrypt) {
                     key[0] = subkeys[j];
                 } else {
-                    key[0] = subkeys[this.subkeys.length - j - 1];
+                    key[0] = subkeys[this.subkeys.length - j -1];
                 }
                 BitSet keyBitSet = BitSet.valueOf(key);
                 outputBitset.xor(keyBitSet);
-//////////////////////////////////////
 /**
  * Substitution
  */
                 byte[] wartosciZSBOX = new byte[8];
 
+
                 sBlocks(outputBitset, wartosciZSBOX);
 
                 BitSet sBoxValuesBitSet = BitSet.valueOf(wartosciZSBOX);
                 keyBitSet.clear();
-
                 //pętla do przekonwertowania 64 bit na 32 bit (usuwanie czterech zer w każdym bajcie)
-                convertingOutputSBOX(keyBitSet, sBoxValuesBitSet);
-
+                  convertingOutputSBOX(keyBitSet, sBoxValuesBitSet);
                 byte[] sBoxValues = keyBitSet.toByteArray();
+
+
                 /**      Permutation
+                 *
                  */
 
                 outputBitset.clear();
@@ -204,7 +202,7 @@ public class DESX {
 
             values2 = czteroBitowaLiczba.toByteArray();
 
-            wartosciZSBOX[j] = Values.substitutionBoxes[values[0]][values2[0]];
+            wartosciZSBOX[j] = Values.substitutionBoxes[j][values[0]*16+values2[0]];
         }
     }
 
@@ -301,7 +299,7 @@ public class DESX {
 
     private byte[] concatBytes(byte[] leftside, byte[] rightside) {
         byte[] temp = new byte[8];
-        for (int i = 0; i < size; i++) {
+
             int l = 0;
             int r = 0;
             for (int j = 0; j < 4; j++) {
@@ -310,7 +308,7 @@ public class DESX {
                 temp[j + 4] = rightside[r];
                 r++;
             }
-        }
+
         return temp;
     }
 

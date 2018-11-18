@@ -55,87 +55,80 @@
     <session id="-176197371">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="1" />
-          <entry key="java" value="3" />
+          <entry key="java" value="6" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="6" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="534" />
+          <entry key="JAVA" value="1256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="534" />
+          <entry key="java" value="1256" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/DESX.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="317" column="41" selection-start-line="317" selection-start-column="23" selection-end-line="317" selection-end-column="41" />
+            <state relative-caret-position="306">
+              <caret line="197" column="13" lean-forward="true" selection-start-line="197" selection-end-line="198" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#xorBytesArray#0;class#DESX#0" />
-                <element signature="method#permutation#0;class#DESX#0" />
-                <element signature="method#blocksDividing#0;class#DESX#0" />
-                <element signature="method#functionF#0;class#DESX#0" />
-                <element signature="method#sBlocks#0;class#DESX#0" />
                 <element signature="method#permutationBoxes#0;class#DESX#0" />
                 <element signature="method#convertingOutputSBOX#0;class#DESX#0" />
-                <element signature="method#expantionPermutation#0;class#DESX#0" />
                 <element signature="method#firstKeyPermutation#0;class#DESX#0" />
                 <element signature="method#compresionPermutation#0;class#DESX#0" />
                 <element signature="method#createSubkeys#0;class#DESX#0" />
-                <element signature="method#concatBytes#0;class#DESX#0" />
-                <element signature="e#10833#10834#0" expanded="true" />
-                <element signature="e#10911#10912#0" expanded="true" />
+                <element signature="e#10550#10551#0" expanded="true" />
+                <element signature="e#10628#10629#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/staticMethods/Methods.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/staticMethods/Values.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-              <folding>
-                <element signature="method#showArray#0;class#Methods#0" />
-                <element signature="method#showArrayAsText#0;class#Methods#0" />
-              </folding>
+            <state relative-caret-position="-221">
+              <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="80" column="125" lean-forward="true" selection-start-line="80" selection-start-column="125" selection-end-line="80" selection-end-column="125" />
+            <state relative-caret-position="935">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
               <folding>
-                <element signature="method#saveFile#0;class#MainController#0" />
                 <element signature="method#getItem#0;class#MainController#0" />
                 <element signature="method#saveAsBytesArray#0;class#MainController#0" />
               </folding>
@@ -153,6 +146,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>16</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -163,9 +161,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/methods/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/staticMethods/Values.java" />
-        <option value="$PROJECT_DIR$/src/main/java/algorithm/DESX.java" />
         <option value="$PROJECT_DIR$/src/main/java/staticMethods/Methods.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/algorithm/DESX.java" />
       </list>
     </option>
   </component>
@@ -182,7 +180,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,10 +245,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542025504664" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542059965261" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -300,7 +298,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2590604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -365,17 +363,10 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainFXML.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="90" selection-start-line="17" selection-start-column="90" selection-end-line="17" selection-end-column="90" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/staticMethods/Values.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="75" column="27" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -383,10 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="e#252#253#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -401,38 +388,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/DESX.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="317" column="41" selection-start-line="317" selection-start-column="23" selection-end-line="317" selection-end-column="41" />
+        <state relative-caret-position="935">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#xorBytesArray#0;class#DESX#0" />
-            <element signature="method#permutation#0;class#DESX#0" />
-            <element signature="method#blocksDividing#0;class#DESX#0" />
-            <element signature="method#functionF#0;class#DESX#0" />
-            <element signature="method#sBlocks#0;class#DESX#0" />
-            <element signature="method#permutationBoxes#0;class#DESX#0" />
-            <element signature="method#convertingOutputSBOX#0;class#DESX#0" />
-            <element signature="method#expantionPermutation#0;class#DESX#0" />
-            <element signature="method#firstKeyPermutation#0;class#DESX#0" />
-            <element signature="method#compresionPermutation#0;class#DESX#0" />
-            <element signature="method#createSubkeys#0;class#DESX#0" />
-            <element signature="method#concatBytes#0;class#DESX#0" />
-            <element signature="e#10833#10834#0" expanded="true" />
-            <element signature="e#10911#10912#0" expanded="true" />
+            <element signature="method#getItem#0;class#MainController#0" />
+            <element signature="method#saveAsBytesArray#0;class#MainController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/MainController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/staticMethods/Values.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="80" column="125" lean-forward="true" selection-start-line="80" selection-start-column="125" selection-end-line="80" selection-end-column="125" />
+        <state relative-caret-position="-221">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/algorithm/DESX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="197" column="13" lean-forward="true" selection-start-line="197" selection-end-line="198" />
           <folding>
-            <element signature="method#saveFile#0;class#MainController#0" />
-            <element signature="method#getItem#0;class#MainController#0" />
-            <element signature="method#saveAsBytesArray#0;class#MainController#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#permutationBoxes#0;class#DESX#0" />
+            <element signature="method#convertingOutputSBOX#0;class#DESX#0" />
+            <element signature="method#firstKeyPermutation#0;class#DESX#0" />
+            <element signature="method#compresionPermutation#0;class#DESX#0" />
+            <element signature="method#createSubkeys#0;class#DESX#0" />
+            <element signature="e#10550#10551#0" expanded="true" />
+            <element signature="e#10628#10629#0" expanded="true" />
           </folding>
         </state>
       </provider>
